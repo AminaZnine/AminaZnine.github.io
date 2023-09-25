@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI in space mining </title>
+  </head>
+  <body>
+    <div class="container">
+        
+        <h2 class="object" data-value="3">AI in<br><span>space mining</span></h2>
+        <img src="1.png" class="object" data-value="-2" alt="">
+        <img src="2.png" class="object" data-value="6" alt="">
+        <img src="3.png" class="object" data-value="4" alt="">
+        <img src="4.png" class="object" data-value="-6" alt="">
+        <img src="5.png" class="object" data-value="8" alt="">
+        <img src="6.png" class="object" data-value="-4" alt="">
+        <img src="7.png" class="object" data-value="5" alt="">
+        <img src="8.png" class="object" data-value="-9" alt="">
+        <img src="9.png" class="object" data-value="-5" alt="">
+      </div>
+      <div class="sec">
+        <h2> Introduction </h2>
+        <p><strong>Space mining</strong> is the discovery,extraction, and processing of valuable resources and minerals beyond the earth's atmosphere. With the frowth in humanity's interest in space exploration, <strong>AI</strong> steps in to accelerate the development of this emerging industry.How does AI contribute to space mining and its potential benefits?</p>
+        
+        <h2> Role of AI in Space Exploration</h2>
+        <p>AI assists in autonomous navigation, data analysis and  descision making processes, and AI  algorithms can analyze vast amount of data from various sources </p>
+        <ul>
+            <li><em>Telescopes</em></li>
+            <li><em>Satellites</em></li>
+            <li><em>Radar data</em></li>
+        </ul>
+        <h2>Autonomous Space Travel</h2>
+        <p>Space mining missions require navigating complex and distant environments and this makes it hard to carry out routine tasks like surveying ,drilling and transporting materials. 
+            These robots can navigate challenging terrains, conduct surveys , and perform mining operations with minimal human intervention</p>
+        <p>Examples:</p>
+        <ul>
+            <li><em>Robonaut:</em> developed by NAZA . It is a humanoid robot designed to assist in space exploration and potentially perform mining tasks.</li>
+            <li><em>Drones:</em> can survey a mining site and create a 3D map of the area.</li>
+
+        </ul>
+        <h2>Resource Identification and Managment</h2>
+        <p>AI contributes significantly to resource identification and managment in space mining by:</p>
+        <ul>
+            <li>Analyzing date to identify valuable resources</li>
+            <li>Helping in identifying optimal mining sites,planing extraction methods and  analyzing energy consumption</li>
+            <li>Enhancing safety by monitoring equipment. predicting potential hazards and responding to emergencies</li>
+            <li>Contributingto cost reduction by increasing the autonomy and efficiency of space mining operations </li>
+            
+        </ul>
+        <h3>Conclution</h3>
+        <p>in conclution, AI is transforming space mining by making it <strong>more safe</strong>, <strong>efficient</strong> and <strong>accurate</strong>.the potential of this technology is significant. But while AI promises sustainability , accessibility and cost-effectiveness in space mining, addressing regulatory,ethical and environmental concerns will be crucial for benefical and responsible practices in the future</p>
+      </div>
+  
+      <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+  
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+  
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+      </script>
+    
+   
+     
+  </body>
+</html>
